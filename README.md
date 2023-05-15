@@ -279,30 +279,12 @@ To guide a beginner developer through this code, you can explain the purpose of 
 
 ### Exercises
   
-Now that you understand what is going on, add comments in `index.js` that will break down the code according to the explanation above.
+Now that you understand what part in index.js does, add comments in `index.js` that will break down the code according to the explanation above.
   
   
+### Exepirement
+  
+Try rendering different elements, and even variables that contain elements.
+Your'e choises are unlimited.
   
   
-  
-# Why React?
-
-React.js is a JavaScript library developed by engineers at Facebook. Here are some compelling reasons why React has become a top choice for web development:
-
-## 1. Speed and Performance
-React is known for its fast performance. It efficiently handles complex updates and ensures that apps remain quick and responsive. This makes it suitable for building high-performing web applications.
-
-## 2. Modularity
-One of the key advantages of React is its modular approach to development. Rather than writing large, monolithic code files, React encourages developers to create smaller, reusable components. This modularity not only improves code maintainability but also enhances developer productivity.
-
-## 3. Scalability
-React shines when it comes to handling large-scale applications with a lot of dynamically changing data. Its virtual DOM (Document Object Model) allows for efficient rendering and updates, ensuring smooth performance even with extensive data manipulation.
-
-## 4. Flexibility
-React's versatility extends beyond web application development. Developers can utilize React for various projects, exploring its potential beyond traditional web development. Its component-based architecture and robust ecosystem offer flexibility and room for innovation.
-
-## 5. Popularity and Employability
-React has gained immense popularity in the developer community. Understanding React and gaining proficiency in it can significantly enhance your employability. As React continues to be widely adopted, having React skills can open up numerous job opportunities in the web development industry.
-
-Whether you are new to React or an experienced developer, the library's simplicity and ease of use make it accessible to all. By starting with the basics and gradually diving into advanced concepts, you can gain a solid understanding of React and unleash its potential for creating powerful web applications.
-
