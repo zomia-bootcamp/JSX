@@ -2,7 +2,7 @@
 
 Your friend’s blog is down! He’s asked you to fix it. You immediately diagnose the problem: a JSX expression with multiple outer elements.
 
-Repair your friend’s broken code by wrapping the JSX in a <div> element.
+Repair your friend’s broken code.
 
 */
 
