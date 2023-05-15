@@ -24,6 +24,7 @@ What are you expecting to see in the browser?
 Now, drag the file to an empty browser. Was you guess right?
 What is going on??
 
+
 ## Unveiling the Mystery
 
 The answer may surprise you—it belongs in a JavaScript file! Although it resembles HTML, the code you shared doesn't actually contain any HTML elements.
@@ -56,6 +57,7 @@ npm list react
 ```
 This command will display the version of React installed in your project along with its dependencies. If React is not installed, you will see an error message.
 
+
 ## JSX Elements: Building Blocks of JSX
 
 In JSX, the fundamental building block is called a JSX element. Let's take a look at an example of a JSX element:
@@ -73,6 +75,7 @@ It's worth noting that when the JavaScript file containing JSX code is compiled,
 ### Exercises
 
 In app.js, write a JSX `<p>` element containing the text, `Hello world`. Use the example code above as a guide.
+
 
 ## JSX Elements and Their Usage in JavaScript
 
@@ -104,7 +107,8 @@ These examples illustrate the versatility of JSX elements, as they can be assign
 
 ### Exercises
 
-In app.js, create a JSX `<article>` element. Save it in a variable named myArticle. Then, insert the `<p>` element into the `<article>`
+In app.js, create a JSX `<article>` element. Save it in a variable named myArticle. 
+
 
 ## Attributes in JSX: Adding Information to JSX Elements
 
@@ -134,15 +138,108 @@ Just like HTML, JSX elements can have multiple attributes, allowing you to provi
 
 ### Exercises
 
-In app.js, inside the `<article>`, create another `<p>` element containing the text `We are learning JSX!`.
-Give the first `<p>` an id attribute of `'large'`.
-Give the second `<p>` an id attribute of `'small'`.
+In app.js, Declare a constant named `p1`.
+
+Set `p1` equal to a JSX `<p>` element containing the text `foo`.
+
+On the next line, declare a constant named `p2`.
+
+Set `p2` equal to another JSX `<p>` element containing the word `bar`.
+
+Give the `<p>` stored in `p1` an `id` attribute of `'large'`.
+
+Give the `<p>` stored in `p2` an `id` attribute of `'small'`.
 
 
+## Nested JSX: Creating Hierarchical JSX Structures
+
+In JSX, just like in HTML, you can nest JSX elements inside other JSX elements, forming a hierarchical structure.
+
+Here's an example of a JSX `<h1>` element nested inside a JSX `<a>` element:
+
+```jsx
+<a href="https://www.example.com"><h1>Click me!</h1></a>
+```
+
+To improve readability, you can use HTML-style line breaks and indentation:
+
+```jsx
+<a href="https://www.example.com">
+  <h1>
+    Click me!
+  </h1>
+</a>
+```
+
+When a JSX expression spans multiple lines, it's important to wrap the multi-line JSX expression in parentheses:
+
+```jsx
+(
+  <a href="https://www.example.com">
+    <h1>
+      Click me!
+    </h1>
+  </a>
+)
+```
+
+Nested JSX expressions can be assigned to variables, passed as function arguments, or used in any other way that non-nested JSX expressions can. Here's an example of a nested JSX expression saved as a variable:
+
+```jsx
+const theExample = (
+  <a href="https://www.example.com">
+    <h1>
+      Click me!
+    </h1>
+  </a>
+);
+```
+
+By leveraging nested JSX, you can create complex and structured JSX components to build dynamic and interactive user interfaces in React.
+
+### Exercises
+
+Declare a new variable named myDiv. Set myDiv equal to a JSX <div> element.
+
+Wrap the <div></div> in parentheses, and use indentation and line breaks like in the examples. In between the <div></div> tags, nest an <h1></h1> containing the text Hello world.
+
+  
+## JSX Outer Elements: The Rule of Having a Single Outermost Element
+
+There is an important rule in JSX that we haven't mentioned yet: **a JSX expression must have exactly one outermost element.**
+
+Let's illustrate this rule with an example:
+
+```jsx
+// Which example is valid jsx?
+
+const paragraphs = (
+  <div id="i-am-the-outermost-element">
+    <p>I am a paragraph.</p>
+    <p>I, too, am a paragraph.</p>
+  </div>
+);
 
 
+const paragraphs = (
+  <p>I am a paragraph.</p> 
+  <p>I, too, am a paragraph.</p>
+);
+```
 
+In the first example, the JSX expression has a single outermost element, which is the `<div>` element. Inside the `<div>`, we have two `<p>` elements.
 
+However, the second example violates the rule. It tries to have two outer elements, two `<p>` elements without being wrapped in another element. This is not allowed in JSX.
+
+If you encounter a situation where your JSX expression has multiple outer elements, the solution is straightforward: wrap the entire JSX expression in a `<div>` element (or any other suitable wrapper element).
+
+By ensuring that your JSX expression has a single outermost element, you can avoid errors and ensure that your JSX code is valid and well-structured.
+  
+
+### Exercises
+  
+  Follow the instructions in [blog.js](./exercises/blog.js)
+  
 
 # Why React?
 
