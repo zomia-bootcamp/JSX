@@ -1,5 +1,21 @@
 # JSX
 
+## Objectives
+
+- Have a clear understanding of JSX elements and their resemblance to HTML.
+- Be able to save JSX elements in variables and store them in objects.
+- Understand how to use JSX attributes to customize and enhance JSX elements.
+- Recognize the syntax for adding attributes to JSX elements.
+- Grasp the concept of nesting JSX elements within other JSX elements.
+- Be proficient in properly formatting nested JSX elements for improved readability.
+- Utilize parentheses for multi-line JSX expressions.
+
+## Preparation
+
+1. Fork and clone this repository.
+2. Create a new branch called `training` for your work.
+3. Install the necessary dependencies using `npm install`.
+
 ## Understanding the Code: JavaScript and JSX
 
 Take a look at the following line of code:
