@@ -48,7 +48,7 @@ To overcome this, when a JavaScript file contains JSX code, it needs to go throu
 ## Installing React
 ### Exercises
 
-To compile our jsx, wew will need to install react on our project. To do so, visit the OpenAI ChatGPT interface. Simply ask a question like, "Can you provide instructions on installing a React app?" ChatGPT will then respond with detailed guidance on how to proceed. Remember that React is necessary to compile JSX code, which allows you to write HTML-like syntax within your React components. If you encounter any issues or need further clarification, feel free to ask ChatGPT for additional information or assistance. Follow the instructions provided by ChatGPT to successfully install your React app.
+To compile our jsx, we will need to install react on our project. To do so, visit the OpenAI ChatGPT interface. Simply ask a question like, "Can you provide instructions on installing a React app?" ChatGPT will then respond with detailed guidance on how to proceed. Remember that React is necessary to compile JSX code, which allows you to write HTML-like syntax within your React components. If you encounter any issues or need further clarification, feel free to ask ChatGPT for additional information or assistance. Follow the instructions provided by ChatGPT to successfully install your React app.
 
 **Before you move on:** 
 Run the following command to check the installed version of React in your project:
@@ -74,7 +74,41 @@ It's worth noting that when the JavaScript file containing JSX code is compiled,
 
 ### Exercises
 
-In app.js, write a JSX `<p>` element containing the text, `Hello world`. Use the example code above as a guide.
+Navigate to `./src/app.js`. You will find an `App` function that looks something like this:
+```js
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+
+
+```
+Empty the return statement, just like this:
+```js
+function App() {
+  return (
+   
+  );
+}
+
+```
+Now, write a JSX `<p>` element containing the text `Hello world` (or anything else)
+Use the example code above as a guide.
 
 
 ## JSX Elements and Their Usage in JavaScript
@@ -107,7 +141,7 @@ These examples illustrate the versatility of JSX elements, as they can be assign
 
 ### Exercises
 
-In app.js, create a JSX `<article>` element. Save it in a variable named myArticle. 
+Follow the instructions in [article.js](./exercises/article.js).  
 
 
 ## Attributes in JSX: Adding Information to JSX Elements
